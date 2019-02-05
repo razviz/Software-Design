@@ -12,7 +12,7 @@ package studentlist;
  */
 public class Student {
     private String name;
-    private int ID;
+    private int id;
     private String DoB;
     
     private int maxHrs;
@@ -21,13 +21,13 @@ public class Student {
     public Student()
     {
         this.name = "Name Not Set";
-        this.ID = 0;
+        this.id = 0;
     }
     //main constructor that takes a name and an id
-    public Student(String givenName, int givenID)
+    public Student(String givenName, int givenid)
     {
           this.name = givenName;
-          this.ID = givenID;
+          this.id = givenid;
     }
     
     // This method sets the value of the name property
@@ -41,14 +41,14 @@ public class Student {
            return this.name;
     }
     
-    public void setID (int givenID)
+    public void setID (int givenid)
     {
-        this.ID = givenID;
+        this.id= givenid;
     }
     
     public int getID ()
     {   
-        return ID;
+        return id;
     }
 
     /**
@@ -63,5 +63,10 @@ public class Student {
      */
     public void setDoB(String DoB) {
         this.DoB = DoB;
+    }
+    
+    public String toString()
+    {
+        return "Student";
     }
 }
