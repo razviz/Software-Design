@@ -23,6 +23,7 @@ public class Student {
         this.name = "Name Not Set";
         this.ID = 0;
     }
+    //main constructor that takes a name and an id
     public Student(String givenName, int givenID)
     {
           this.name = givenName;
