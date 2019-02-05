@@ -9,23 +9,26 @@ package studentlist;
 /**
  *
  * @author shaim
+ * Date: Feb 5th, 2019
  */
 public class Student {
     private String name;
-    private int ID;
+    private int id;
     private String DoB;
     
     private int maxHrs;
     
+    // Default constructor for Student class
     public Student()
     {
-        name = "Name Not Set";
-        ID = 0;
+        this.name = "Name Not Set";
+        this.id = 0;
     }
-    public Student(String givenName, int givenID)
+    //main constructor that takes a name and an id
+    public Student(String givenName, int givenid)
     {
           this.name = givenName;
-          this.ID = givenID;
+          this.id = givenid;
     }
     
     // This method sets the value of the name property
@@ -39,14 +42,14 @@ public class Student {
            return this.name;
     }
     
-    public void setID (int givenID)
+    public void setID (int givenid)
     {
-        this.ID = givenID;
+        this.id= givenid;
     }
     
     public int getID ()
     {   
-        return ID;
+        return id;
     }
 
     /**
@@ -55,11 +58,10 @@ public class Student {
     public String getDoB() {
         return DoB;
     }
-
-    /**
-     * @param DoB the DoB to set
-     */
-    public void setDoB(String DoB) {
-        this.DoB = DoB;
+    
+    public String toString()
+    {
+        return "Student";
     }
+    // this was the DoB setter
 }
