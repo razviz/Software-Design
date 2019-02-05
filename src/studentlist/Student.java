@@ -17,10 +17,11 @@ public class Student {
     
     private int maxHrs;
     
+    // Default constructor for Student class
     public Student()
     {
-        name = "Name Not Set";
-        ID = 0;
+        this.name = "Name Not Set";
+        this.ID = 0;
     }
     public Student(String givenName, int givenID)
     {
